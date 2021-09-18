@@ -24,6 +24,14 @@
             <h2>Condicionais</h2>
             <p v-if="seen">Agora você me viu</p>
         </div>
+        <div id="app-4">
+            <h2>Laço de Repetição</h2>
+            <ol>
+                <li v-for="todo in todos">
+                    {{ todo.text }}
+                </li>
+            </ol>
+        </div>
         <script charset="utf-8" src="./main.js"></script>
     </body>
 </html>

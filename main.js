@@ -1,3 +1,4 @@
+// # interpolação de texto
 var app = new Vue({
     el: '#app',
     data: {
@@ -5,6 +6,7 @@ var app = new Vue({
     }
 })
 
+// # interligação de atributos e elementos
 var app2 = new Vue({
     el: '#app-2',
     data: {
@@ -12,9 +14,22 @@ var app2 = new Vue({
     }
 })
 
+// # Elementos Condicionais
 var app3 = new Vue({
     el: '#app-3',
     data: {
         seen: true
+    }
+})
+
+// # Loop com elementos
+var app4 = new Vue({
+    el: '#app-4',
+    data: {
+        todos: [
+            { text: 'Aprender JavaScript' },
+            { text: 'Aprender Vue' },
+            { text: 'Criar algo incrível' }
+        ]
     }
 })
