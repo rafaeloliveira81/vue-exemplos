@@ -33,3 +33,41 @@ var app4 = new Vue({
         ]
     }
 })
+
+// # Interação do usuário
+var app5 = new Vue({
+    el: '#app-5',
+    data: {
+        mensagem: 'Olá Vue!'
+    },
+    methods: {
+        inverter: function() {
+            this.mensagem = this.mensagem.split('').reverse().join('')
+        }
+    }
+})
+
+// # Two-way binding
+var app6 = new Vue({
+    el: '#app-6',
+    data: {
+        mensagem: 'Interligação de mão dupla'
+    }
+})
+
+// # Componente
+Vue.component('todo-item', {
+    props: ['todo'],
+    template: '<li>{{ todo.text }}</li>'
+})
+
+var app7 = new Vue({
+    el: '#app-7',
+    data: {
+        listaDeCompras: [
+            { id: 0, text: 'Vegetais' },
+            { id: 1, text: 'Queijo' },
+            { id: 2, text: 'Carne' }
+        ]
+    }
+})
