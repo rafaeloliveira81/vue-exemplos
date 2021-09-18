@@ -9,7 +9,20 @@
     </head>
     <body>
         <div id="app">
+            <h2>Interpolação de Texto</h2>
             {{ mensagem }}
+        </div>
+        <div>
+            <h2>Interligar atributos dinamicamente</h2>
+            <div id="app-2">
+                <span v-bind:title="mensagem">
+                    Pare o mouse sobre mim e veja a dica interligada dinamicamente!
+                </span>
+            </div>
+        </div>
+        <div id="app-3">
+            <h2>Condicionais</h2>
+            <p v-if="seen">Agora você me viu</p>
         </div>
         <script charset="utf-8" src="./main.js"></script>
     </body>
